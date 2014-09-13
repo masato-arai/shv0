@@ -1,22 +1,40 @@
-/* line 2, ../sass/style.scss */
-#wrapper {
-  background: #ddedf3;
+/* line 3, ../sass/style.scss */
+body, html {
   height: 100%;
-  width: 100%;
 }
 
 /* line 7, ../sass/style.scss */
+#wrapper {
+  background: #ddedf3;
+  height: 100%;
+  padding: 24px;
+  position: relative;
+  width: 100%;
+}
+
+/* line 15, ../sass/style.scss */
 h1 {
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  *zoom: 1;
-  *display: inline;
-  -moz-box-shadow: 0 0 10px #a82f34;
-  -webkit-box-shadow: 0 0 10px #a82f34;
-  box-shadow: 0 0 10px #a82f34;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
-  opacity: 0.5;
-  color: #ccc;
-  background: #000;
+  margin: 0;
+}
+
+/* line 19, ../sass/style.scss */
+#frame {
+  border: 10px solid #000;
+  height: 100%;
+  margin: auto;
+  width: 100%;
+}
+
+/* line 26, ../sass/style.scss */
+.contents {
+  margin: auto;
+  position: absolute;
+  top: -30px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 480px;
+  height: 380px;
+  text-align: left;
+  padding-left: 20px;
 }
