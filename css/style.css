@@ -1,9 +1,15 @@
-/* line 3, ../sass/style.scss */
+/* var base = 12;
+var to = 72;
+for (var i = 10; i<=to; i++) {
+	var p = Math.ceil(i/base*100);
+	console.log("$px"+i+":"+p+"%;");
+} */
+/* line 4, ../sass/style.scss */
 body, html {
   height: 100%;
 }
 
-/* line 7, ../sass/style.scss */
+/* line 8, ../sass/style.scss */
 #wrapper {
   background: #ddedf3;
   height: 100%;
@@ -11,13 +17,14 @@ body, html {
   position: relative;
   width: 100%;
 }
-
 /* line 15, ../sass/style.scss */
-h1 {
+#wrapper h1, #wrapper p {
+  color: #000;
+  font-size: 167%;
   margin: 0;
 }
 
-/* line 19, ../sass/style.scss */
+/* line 23, ../sass/style.scss */
 #frame {
   border: 10px solid #000;
   height: 100%;
@@ -25,7 +32,7 @@ h1 {
   width: 100%;
 }
 
-/* line 26, ../sass/style.scss */
+/* line 30, ../sass/style.scss */
 .contents {
   margin: auto;
   position: absolute;

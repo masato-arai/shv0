@@ -1,4 +1,5 @@
 @import "compass";
+@import "ptp-12";
 
 body, html {
 	height: 100%;
@@ -10,11 +11,14 @@ body, html {
 	padding: 24px;
 	position: relative;
 	width: 100%;
-} 
 
-h1 {
-	margin: 0;
-}
+	h1, p {
+		color: #000;
+		font-size: $px20;
+		margin: 0;
+	}
+
+} 
 
 #frame {
 	border: 10px solid #000;
