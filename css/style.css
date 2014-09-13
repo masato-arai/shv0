@@ -43,6 +43,31 @@ body, html {
   line-height: 32px;
   margin: 0;
 }
+#wrapper a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+}
+#wrapper a:before {
+  background: #d92933;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  -webkit-transform: translateY(12px);
+  -ms-transform: translateY(12px);
+  transform: translateY(12px);
+}
+#wrapper a:hover {
+  width: 0;
+  -webkit-transition: width 1s ease-in-out;
+  -moz-transition: width 1s ease-in-out;
+  -o-transition: width 1s ease-in-out;
+  transition: width 1s ease-in-out;
+}
 
 #frame {
   border: 10px solid #000;
