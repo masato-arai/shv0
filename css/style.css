@@ -1,15 +1,7 @@
-/* var base = 12;
-var to = 72;
-for (var i = 10; i<=to; i++) {
-	var p = Math.ceil(i/base*100);
-	console.log("$px"+i+":"+p+"%;");
-} */
-/* line 4, ../sass/style.scss */
 body, html {
   height: 100%;
 }
 
-/* line 8, ../sass/style.scss */
 #wrapper {
   background: #ddedf3;
   height: 100%;
@@ -17,14 +9,12 @@ body, html {
   position: relative;
   width: 100%;
 }
-/* line 15, ../sass/style.scss */
 #wrapper h1, #wrapper p {
   color: #000;
   font-size: 167%;
   margin: 0;
 }
 
-/* line 23, ../sass/style.scss */
 #frame {
   border: 10px solid #000;
   height: 100%;
@@ -32,7 +22,19 @@ body, html {
   width: 100%;
 }
 
-/* line 30, ../sass/style.scss */
+.contents {
+  margin: auto;
+  position: absolute;
+  top: -30px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 480px;
+  height: 380px;
+  text-align: left;
+  padding-left: 20px;
+}
+
 .contents {
   margin: auto;
   position: absolute;
