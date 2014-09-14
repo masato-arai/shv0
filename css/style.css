@@ -1,4 +1,14 @@
 @import url(//fonts.googleapis.com/css?family=Lato:300,400,700);
+::-moz-selection {
+  color: #fff;
+  background: #d92933;
+}
+
+::selection {
+  color: #fff;
+  background: #d92933;
+}
+
 #wrapper h1, #wrapper p {
   font-family: 'Lato', sans-serif;
   letter-spacing: .07em;
