@@ -34,8 +34,14 @@
                         <span class="line"></span>
                     </a>
                 </div>
-                <div class="projectsContents">
-                    
+                <div class="projectsContents" ng-app ng-controller="ProjectsCtrl">
+                    <ul>
+                        <li ng-repeat=" project in projects" ng-bind-html="project.date" >
+                            <div class='aaa'>{{ project.date }}</div>
+                            <div class='bbb'>{{ project.title }}</div>
+                            <div class='ccc'>{{ project.tag }}</div>
+                        </li>
+                    </ul>
                 </div>
                 <div id="copyRight">© <span class="year"></span> sekkithub</div>
             </div>
@@ -44,5 +50,6 @@
         <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
         <script type="text/javascript" src="//code.jquery.com/jquery-2.1.0.min.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/projects.js"></script>
     </body>
 </html>

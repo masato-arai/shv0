@@ -1,3 +1,4 @@
+// Close button for modal
 $("#projects").click(function() {
     $('#projectsWrapper').animate({ 
         opacity: 1
@@ -17,5 +18,7 @@ $(".btnClose").click(function() {
     });
 });
 
+
+// Get the value of year
 var year = new Date().getFullYear();
 $('.year').text(year);
