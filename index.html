@@ -37,9 +37,11 @@
                 <div class="projectsContents" ng-app ng-controller="ProjectsCtrl">
                     <ul>
                         <li ng-repeat="project in projects" ng-bind-html-unsafe="getContent(project)">
-                            <div>{{ project.date }}</div>
-                            <div>{{ project.title }}</div>
-                            <div>{{ project.tag }}</div>
+<!--
+                            <div class="date">{{ project.date }}</div>
+                            <div class="title">{{ project.title }}</div>
+                            <div class="tag">{{ project.tag }}</div>
+-->
                         </li>
                     </ul>
                 </div>
