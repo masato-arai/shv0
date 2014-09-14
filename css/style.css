@@ -54,19 +54,20 @@ body, html {
   content: '';
   position: absolute;
   top: 0;
-  left: 0;
   right: 0;
   height: 3px;
+  width: 100%;
   -webkit-transform: translateY(12px);
   -ms-transform: translateY(12px);
   transform: translateY(12px);
 }
-#wrapper a:hover {
+#wrapper a:hover:before {
+  opacity: 0;
   width: 0;
-  -webkit-transition: width 1s ease-in-out;
-  -moz-transition: width 1s ease-in-out;
-  -o-transition: width 1s ease-in-out;
-  transition: width 1s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 #frame {
