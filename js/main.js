@@ -9,5 +9,13 @@ $("#projects").click(function() {
 	});
 });
 
+$(".btnClose").click(function() {
+    $('#projectsWrapper').animate({
+        opacity: 0
+    }, 300, function() {
+        $(this).css('visibility', 'hidden');
+    });
+});
+
 var year = new Date().getFullYear();
 $('.year').text(year);

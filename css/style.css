@@ -91,6 +91,36 @@ body, html {
   width: 100%;
   visibility: hidden;
   z-index: 1000;
+  /*
+      #close {
+          display: block;
+          
+          .btnClose {
+              cursor: pointer;
+              height: 55px;
+              padding: 0;
+              position: absolute;
+              right: 0;
+              top: 0;
+              width: 55px;
+  
+              .line {
+                  background: #000;
+                  display: block;
+                  width: 55px;
+                  height: 3px;
+              }
+  
+              .line:nth-child(1) {
+                  transform: rotate(45deg);
+              }
+              
+              .line:nth-child(2) {
+                  transform: rotate(-45deg);
+              }
+          }
+      }
+  */
 }
 #projectsWrapper #projectsFrame {
   height: 100%;
@@ -109,19 +139,29 @@ body, html {
   left: 0;
   position: absolute;
 }
-#projectsWrapper #close span:before, #projectsWrapper #close span:after {
-  cursor: pointer;
-  height: 3px;
-  width: 55px;
-  background: #000;
-  position: absolute;
-  content: '';
-  top: 0;
-  right: 0;
+#projectsWrapper #close {
+  display: block;
 }
-#projectsWrapper #close span:before {
+#projectsWrapper #close .btnClose {
+  cursor: pointer;
+  height: 55px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 55px;
+}
+#projectsWrapper #close .btnClose .line {
+  background: #000;
+  display: block;
+  height: 3px;
+  position: absolute;
+  width: 55px;
+}
+#projectsWrapper #close .btnClose .line:nth-child(1) {
+  top: 27px;
   transform: rotate(45deg);
 }
-#projectsWrapper #close span:after {
+#projectsWrapper #close .btnClose .line:nth-child(2) {
+  top: 27px;
   transform: rotate(-45deg);
 }
