@@ -92,9 +92,52 @@ body, html {
     height: 100%;
     left: 0;
     opacity: 0;
+    padding: 40px;
     position: absolute;
     top: 0;
     width: 100%;
     visibility: hidden;
     z-index: 1000;
+    
+    #projectsFrame {
+        height: 100%;
+        margin: auto;
+        position: relative;
+        width: 100%;
+    }
+    
+    h3 {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+    }
+    
+    #copyRight {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+    }
+
+    #close {
+        span:before, span:after {
+            cursor: pointer;
+            height: 3px;
+            width: 55px;
+            background: #000;
+            position: absolute;
+            content: '';
+            top: 0;
+            right: 0;
+        }
+
+        span:before {
+            transform: rotate(45deg);
+        }
+    
+        span:after {
+            transform: rotate(-45deg);
+        }
+    }
+
 }
