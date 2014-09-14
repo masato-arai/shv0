@@ -58,6 +58,11 @@ body, html {
         position: relative;
     }
 
+    a:before,
+    a:hover:before {
+        @include transition(all 0.3s ease-in-out);
+    }
+
     a:before {
         background: #d92933;
         content: '';
@@ -66,18 +71,11 @@ body, html {
         right: 0;
         height: 3px;
         width: 100%;
-        -webkit-transform: translateY(12px);
-        -ms-transform: translateY(12px);
-        transform: translateY(12px);
+        @include transform(translateY(12px));
     }
 
     a:hover:before {
-        opacity: 0;
         width: 0;
-        -webkit-transition: all .3s ease-in-out;
-        -moz-transition: all .3s ease-in-out;
-        -o-transition: all .3s ease-in-out;
-        transition: all .3s ease-in-out;
     }
 
 }

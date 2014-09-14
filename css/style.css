@@ -49,6 +49,13 @@ body, html {
   text-decoration: none;
   position: relative;
 }
+#wrapper a:before,
+#wrapper a:hover:before {
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
 #wrapper a:before {
   background: #d92933;
   content: '';
@@ -57,17 +64,13 @@ body, html {
   right: 0;
   height: 3px;
   width: 100%;
-  -webkit-transform: translateY(12px);
+  -moz-transform: translateY(12px);
   -ms-transform: translateY(12px);
+  -webkit-transform: translateY(12px);
   transform: translateY(12px);
 }
 #wrapper a:hover:before {
-  opacity: 0;
   width: 0;
-  -webkit-transition: all .3s ease-in-out;
-  -moz-transition: all .3s ease-in-out;
-  -o-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
 }
 
 #frame {
