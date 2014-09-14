@@ -91,36 +91,6 @@ body, html {
   width: 100%;
   visibility: hidden;
   z-index: 1000;
-  /*
-      #close {
-          display: block;
-          
-          .btnClose {
-              cursor: pointer;
-              height: 55px;
-              padding: 0;
-              position: absolute;
-              right: 0;
-              top: 0;
-              width: 55px;
-  
-              .line {
-                  background: #000;
-                  display: block;
-                  width: 55px;
-                  height: 3px;
-              }
-  
-              .line:nth-child(1) {
-                  transform: rotate(45deg);
-              }
-              
-              .line:nth-child(2) {
-                  transform: rotate(-45deg);
-              }
-          }
-      }
-  */
 }
 #projectsWrapper #projectsFrame {
   height: 100%;
@@ -156,12 +126,34 @@ body, html {
   height: 3px;
   position: absolute;
   width: 55px;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 #projectsWrapper #close .btnClose .line:nth-child(1) {
   top: 27px;
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 #projectsWrapper #close .btnClose .line:nth-child(2) {
   top: 27px;
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
+}
+#projectsWrapper #close .btnClose:hover .line:nth-child(1) {
+  -moz-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  -webkit-transform: rotate(225deg);
+  transform: rotate(225deg);
+}
+#projectsWrapper #close .btnClose:hover .line:nth-child(2) {
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
 }

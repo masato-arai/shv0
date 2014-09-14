@@ -119,37 +119,6 @@ body, html {
         position: absolute;
     }
 
-/*
-    #close {
-        display: block;
-        
-        .btnClose {
-            cursor: pointer;
-            height: 55px;
-            padding: 0;
-            position: absolute;
-            right: 0;
-            top: 0;
-            width: 55px;
-
-            .line {
-                background: #000;
-                display: block;
-                width: 55px;
-                height: 3px;
-            }
-
-            .line:nth-child(1) {
-                transform: rotate(45deg);
-            }
-            
-            .line:nth-child(2) {
-                transform: rotate(-45deg);
-            }
-        }
-    }
-*/
-
     #close {
         display: block;
 
@@ -167,16 +136,27 @@ body, html {
                 height: 3px;
                 position: absolute;
                 width: 55px;
+                @include transition(all 0.3s ease-in-out);
             }
     
             .line:nth-child(1) {
                 top: 27px;
-                transform: rotate(45deg);
+                @include transform(rotate(45deg));
             }
             
             .line:nth-child(2) {
                 top: 27px;
-                transform: rotate(-45deg);
+                @include transform(rotate(-45deg));
+            }
+        }
+
+        .btnClose:hover {
+            .line:nth-child(1) {
+                @include transform(rotate(225deg));
+            }
+            
+            .line:nth-child(2) {
+                @include transform(rotate(135deg));
             }
         }
     }
