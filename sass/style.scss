@@ -114,6 +114,7 @@ body, html {
         margin: auto;
         position: relative;
         width: 100%;
+        z-index: 0;
     }
     
     h3 {
@@ -131,6 +132,7 @@ body, html {
 
     #close {
         display: block;
+        z-index: 10000;
 
         .btnClose {
             cursor: pointer;
@@ -172,13 +174,105 @@ body, html {
     }
     
     .projectsContents {
-        @extend %lato;
-        font-size: $px16;
-        font-weight: 400;
-        line-height: 32px;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -10;
+
+        ul{
+            @extend %lato;
+            bottom: 0;
+            font-size: 1.3em;
+            font-weight: 400;
+            height: 310px;
+            left: 0;
+            line-height: 32px;
+            margin: auto;
+            padding: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 900px;
+            z-index: 10;
+        }
 
         li {
             list-style: none;
+
+            div {
+                padding: 0.2em 0;
+            }
+            
+            .date, .title {
+                float: left;
+            }
+            
+            .date {
+                width: 160px;
+            }
+            
+            .title {
+                width: 560px;
+            }
+            
+            a {
+                color: #000;
+            }
+            
+            a:hover {
+                text-decoration: none;
+                /* border-bottom: 3px solid #d92933; */
+            }
+            
+            a:hover {
+                -webkit-animation-name: blinker;
+                -webkit-animation-duration: .2s;
+                -webkit-animation-timing-function: linear;
+                -webkit-animation-iteration-count: infinite;
+                
+                -moz-animation-name: blinker;
+                -moz-animation-duration: .2s;
+                -moz-animation-timing-function: linear;
+                -moz-animation-iteration-count: infinite;
+                
+                animation-name: blinker;
+                animation-duration: .2s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+            }
+            
+            @-moz-keyframes blinker {  
+                0% { opacity: 1.0; }
+                50% { opacity: 0.0; }
+                100% { opacity: 1.0; }
+            }
+            
+            @-webkit-keyframes blinker {  
+                0% { opacity: 1.0; }
+                50% { opacity: 0.0; }
+                100% { opacity: 1.0; }
+            }
+            
+            @keyframes blinker {  
+                0% { opacity: 1.0; }
+                50% { opacity: 0.0; }
+                100% { opacity: 1.0; }
+            }
+
+            a:visited {
+                background: #d92933;
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: 3px;
+                width: 100%;
+                @include transform(translateY(17px));
+            }
+
         }
     }
 

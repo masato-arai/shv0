@@ -36,13 +36,7 @@
                 </div>
                 <div class="projectsContents" ng-app ng-controller="ProjectsCtrl">
                     <ul>
-                        <li ng-repeat="project in projects" ng-bind-html-unsafe="getContent(project)">
-<!--
-                            <div class="date">{{ project.date }}</div>
-                            <div class="title">{{ project.title }}</div>
-                            <div class="tag">{{ project.tag }}</div>
--->
-                        </li>
+                        <li ng-repeat="project in projects" ng-bind-html-unsafe="getContent(project)"></li>
                     </ul>
                 </div>
                 <div id="copyRight">© <span class="year"></span> sekkithub</div>
