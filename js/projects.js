@@ -36,6 +36,11 @@ function ProjectsCtrl($scope) {
             tag: 'WWW'
         },
         {
+            date: '04/04/2014',
+            title: '<a href="https://vimeo.com/81094199" target="_blank">AInsole</a>',
+            tag: 'Project'
+        },
+        {
             date: '12/09/2013',
             title: '<a href="http://www.hitomihitomi.com/" target="_blank">@kiki</a>',
             tag: 'WWW'
