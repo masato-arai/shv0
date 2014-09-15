@@ -38,7 +38,7 @@ function ProjectsCtrl($scope) {
         {
             date: '04/04/2014',
             title: '<a href="https://vimeo.com/81094199" target="_blank">AInsole</a>',
-            tag: 'Project'
+            tag: 'Project' + ', ' + 'Video'
         },
         {
             date: '12/09/2013',
