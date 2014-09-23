@@ -11,6 +11,11 @@ function ProjectsCtrl($scope) {
             tag: '<span class="www">WWW</span>' + ', ' + '<span class="app">Application</span>'
         },
         {
+            date: '02/08/2014',
+            title: '<a href="http://km.cx/" target="_blank">ATELIER KEIICHI MATSUDA</a>',
+            tag: 'WWW'
+        },
+        {
             date: '05/07/2014',
             title: '<a href="https://vimeo.com/100014968" target="_blank">MELODY WALKS</a>',
             tag: '<span class="instalation">Instalation</span>'
@@ -28,11 +33,6 @@ function ProjectsCtrl($scope) {
         {
             date: '14/05/2014',
             title: '<a href="http://wip14.int-des.com/" target="_blank">MA Interactive Media 13-14 Work in Progress Show</a>',
-            tag: 'WWW'
-        },
-        {
-            date: '02/05/2014',
-            title: '<a href="http://km.cx/" target="_blank">ATELIER KEIICHI MATSUDA</a>',
             tag: 'WWW'
         },
         {

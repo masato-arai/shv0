@@ -1,4 +1,4 @@
-// Close button for modal
+// Open projects modal
 $("#projects").click(function() {
     $('#projectsWrapper').animate({ 
         opacity: 1
@@ -10,6 +10,7 @@ $("#projects").click(function() {
 	});
 });
 
+// Close button for modal
 $(".btnClose").click(function() {
     $('#projectsWrapper').animate({
         opacity: 0
