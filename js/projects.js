@@ -6,6 +6,11 @@ function ProjectsCtrl($scope) {
     }
     $scope.projects = [
         {
+            date: '21/11/2014',
+            title: '<a href="http://londonramenmap.uk/" target="_blank">LONDON RAMEN MAP</a>',
+            tag: '<span class="www">WWW</span>' + ', ' + '<span class="app">Application</span>'
+        },
+        {
             date: '19/08/2014',
             title: '<a href="http://mixyoutubeinthehouse.com/" target="_blank">MIX YOUTUBE IN THE HOUSE</a>',
             tag: '<span class="www">WWW</span>' + ', ' + '<span class="app">Application</span>'
