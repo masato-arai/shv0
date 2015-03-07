@@ -46,11 +46,6 @@ function ProjectsCtrl($scope) {
             tag: 'Project' + ', ' + 'Video'
         },
         {
-            date: '12/09/2013',
-            title: '<a href="http://www.hitomihitomi.com/" target="_blank">@kiki</a>',
-            tag: 'WWW'
-        },
-        {
             date: '06/11/2012',
             title: '<a href="http://alexandersoloviev.co.uk/" target="_blank">Alexander Soloviev</a>',
             tag: 'WWW'
